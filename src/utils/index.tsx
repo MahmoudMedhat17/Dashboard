@@ -54,3 +54,36 @@ export const sidebarItems: sidebarItemsProps[]= [
         path:"/settings"
     }
 ];
+
+
+
+export const navbarHeaders = [
+    {
+        title:"Overview",
+        path:"/"
+    },
+    {
+        title:"Products",
+        path:"/products"
+    },
+    {
+        title:"Users",
+        path:"/users"
+    },
+    {
+        title:"Sales",
+        path:"/sales"
+    },
+    {
+        title:"Orders",
+        path:"/orders"
+    },
+    {
+        title:"Analytics",
+        path:"/analytics"
+    },
+    {
+        title:"Settings",
+        path:"/settings"
+    }
+];

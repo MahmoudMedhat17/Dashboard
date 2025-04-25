@@ -9,9 +9,9 @@ const Sidebar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   
   return (
-    <motion.div animate={{width: sidebarOpen ? 256 : 80}} className={`relative z-10 transition-all duration-100 ease-linear shrink-0 ov ${sidebarOpen ? `w-64` : `w-20`}`}>
-      <motion.div className="bg-gray-800 opacity-80 border-r backdrop-blur-md border-gray-700 !p-4 h-screen">
-        <motion.button whileHover={{scale:1.1}} whileTap={{scale:0.9}} onClick={()=> setSidebarOpen(!sidebarOpen)} className="bg-gray-400 !p-2 rounded-full cursor-pointer">
+    <motion.div animate={{width: sidebarOpen ? 256 : 80}} className={`overflow-hidden relative z-10 transition-all duration-100 ease-linear shrink-0 ov ${sidebarOpen ? `w-64` : `w-20`}`}>
+      <motion.div className="bg-gray-800 opacity-80 border-r backdrop-blur-md border-gray-700 p-4 h-screen">
+        <motion.button whileHover={{scale:1.1}} whileTap={{scale:0.9}} onClick={()=> setSidebarOpen(!sidebarOpen)} className="bg-gray-400 p-2 rounded-full cursor-pointer">
           <Menu size={24}/>
         </motion.button>
             <nav className="flex flex-col justify-around h-full">
@@ -19,7 +19,7 @@ const Sidebar = () => {
                 sidebarItems.map((item,index)=>(
                   <div key={index} className="hover:bg-gray-400 duration-300 rounded-sm">
                     <Link to={item.path}>
-                      <div className="flex gap-4 text-sm !p-2 font-semibold">
+                      <div className="flex gap-4 text-sm p-2 font-semibold">
                       <span style={{color:`${item.color}`}}>{item.icon}</span>
                         <AnimatePresence>
                           {
