@@ -57,7 +57,13 @@ export const sidebarItems: sidebarItemsProps[]= [
 
 
 
-export const navbarHeaders = [
+interface navbarHeadersProps {
+    title:string;
+    path:string;
+};
+
+
+export const navbarHeaders: navbarHeadersProps[] = [
     {
         title:"Overview",
         path:"/"
@@ -87,3 +93,5 @@ export const navbarHeaders = [
         path:"/settings"
     }
 ];
+
+

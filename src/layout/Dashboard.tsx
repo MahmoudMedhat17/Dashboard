@@ -16,16 +16,18 @@ const Dashboard = () => {
       <Sidebar/>
       <div className="flex flex-col flex-1">
       <Navbar/>
-      <Routes>
-        <Route path="/" element={<Overview/>}/>
-        <Route path="/products" element={<Products/>}/>
-        <Route path="/users" element={<Users/>}/>
-        <Route path="/sales" element={<Sales/>}/>
-        <Route path="/orders" element={<Orders/>}/>
-        <Route path="/analytics" element={<Analytics/>}/>
-        <Route path="/settings" element={<Settings/>}/>
-        <Route path="*" element={<Error/>}/>
-      </Routes>
+      <div className="px-8 sm:px-16 md:px-32 lg:px-48 py-4">
+        <Routes>
+          <Route path="/" element={<Overview/>}/>
+          <Route path="/products" element={<Products/>}/>
+          <Route path="/users" element={<Users/>}/>
+          <Route path="/sales" element={<Sales/>}/>
+          <Route path="/orders" element={<Orders/>}/>
+          <Route path="/analytics" element={<Analytics/>}/>
+          <Route path="/settings" element={<Settings/>}/>
+          <Route path="*" element={<Error/>}/>
+        </Routes>
+      </div>
       </div>
     </div>
   )

@@ -1,9 +1,22 @@
-import React from 'react'
+import {motion} from "framer-motion";
+import Statescard from "../components/Statescard";
+import { Zap, ShoppingBag, Users, ChartNoAxesColumn } from 'lucide-react';
+import Salesoverview from "../components/overview/Salesoverview";
 
 const Overview = () => {
   return (
-    <div>Overview</div>
+    <section>
+      <motion.main className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-8">
+        <Statescard title={"Total Sales"} icon={<Zap className="text-[#6366f1]"/>} data={"$12,345"}/>
+        <Statescard title={"New Users"} icon={<Users className="text-[#6366f1]"/>} data={"1,234"}/>
+        <Statescard title={"Total Products"} icon={<ShoppingBag className="text-[#EC4899]"/>} data={"567"}/>
+        <Statescard title={"Conversion Rate"} icon={<ChartNoAxesColumn className="text-[#10B981]"/>} data={"12.5%"}/>
+      </motion.main>
+      <div>
+        <Salesoverview/>
+      </div>
+    </section>
   )
 }
 
-export default Overview
+export default Overview;
