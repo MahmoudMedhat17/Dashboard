@@ -2,6 +2,7 @@ import {motion} from "framer-motion";
 import Statescard from "../components/Statescard";
 import { Zap, ShoppingBag, Users, ChartNoAxesColumn } from 'lucide-react';
 import Salesoverview from "../components/overview/Salesoverview";
+import Categorydis from "../components/overview/Categorydis";
 
 const Overview = () => {
   return (
@@ -14,6 +15,7 @@ const Overview = () => {
       </motion.main>
       <div>
         <Salesoverview/>
+        <Categorydis/>
       </div>
     </section>
   )

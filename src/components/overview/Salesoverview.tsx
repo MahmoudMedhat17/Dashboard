@@ -11,15 +11,13 @@ const linechartData = [
   { month: 'Feb', sales: 6800 },
   { month: 'Mar', sales: 7500 },
   { month: 'Apr', sales: 6900 },
-  { month: 'May', sales: 7700 },
-  { month: 'Jun', sales: 8100 },
 ];
 
 const Salesoverview = () => {
   return (
-    <div className="p-6 border border-gray-700 rounded-xl shadow-xl cursor-pointer h-full w-full">
+    <div className="p-6 border border-gray-700 rounded-xl shadow-xl cursor-pointer h-[400px] w-full space-y-4">
       <h2>Sales Overview</h2>
-      <ResponsiveContainer width="100%" height="100%">
+      <ResponsiveContainer width="100%" height="90%">
         <LineChart data={linechartData}>
           <CartesianGrid strokeDasharray="3 3" stroke="#2d2d2d" />
           <XAxis dataKey="month" stroke="#ccc" />
