@@ -50,7 +50,7 @@ const Categorydis = () => {
   return (
     <div className='p-4 border border-gray-700 rounded-xl shadow-xl cursor-pointer h-[400px] w-full space-y-4'>
       <h2>Category Distribution</h2>
-      <ResponsiveContainer width="100%" height="100%">
+      <ResponsiveContainer width="100%" height="70%">
         <PieChart width={400} height={400}>
             <Pie
               data={categoryDistributionData}
@@ -68,11 +68,11 @@ const Categorydis = () => {
             </Pie>
         </PieChart>
       </ResponsiveContainer>
-      <div>
+      <div className='flex flex-wrap justify-center gap-4'>
         {
           categoryDistributionData.map((category,index)=>(
             <div key={index}>
-              <div>
+              <div className='flex items-center gap-2'>
                 <div className='w-4 h-4' style={{backgroundColor:`${COLORS[index % COLORS.length]}`}}/>
                 <span className='text-sm font-semibold' style={{color:`${COLORS[index % COLORS.length]}`}}>
                   {category.name}
