@@ -48,7 +48,7 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, outerRadius, percent, name, i
 
 const Categorydis = () => {
   return (
-    <div className='p-4 border border-gray-700 rounded-xl shadow-xl cursor-pointer h-[400px] w-full space-y-4'>
+    <div className='p-4 border border-gray-700 rounded-xl shadow-xl cursor-pointer h-[500px] w-full space-y-4'>
       <h2>Category Distribution</h2>
       <ResponsiveContainer width="100%" height="70%">
         <PieChart width={400} height={400}>

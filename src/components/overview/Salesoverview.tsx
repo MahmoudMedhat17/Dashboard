@@ -16,7 +16,7 @@ const linechartData = [
 
 const Salesoverview = () => {
   return (
-    <motion.div initial={{opacity:0, translateY:20}} animate={{opacity:1, translateY:0}} transition={{delay:0.5}} className="p-6 border border-gray-700 rounded-xl shadow-xl cursor-pointer h-[400px] w-full space-y-4">
+    <motion.div initial={{opacity:0, translateY:20}} animate={{opacity:1, translateY:0}} transition={{delay:0.5}} className="p-6 border border-gray-700 rounded-xl shadow-xl cursor-pointer h-[500px] w-full space-y-4">
       <h2>Sales Overview</h2>
       <ResponsiveContainer width="100%" height="90%">
         <LineChart data={linechartData}>
