@@ -1,4 +1,4 @@
-import { ChartNoAxesColumn, ShoppingBag , Users, DollarSign , ShoppingCart , TrendingUp , Settings  } from 'lucide-react';
+import { ChartNoAxesColumn, ShoppingBag , Users, DollarSign , ShoppingCart , TrendingUp , Settings, Pencil, Trash2  } from 'lucide-react';
 
 
 
@@ -95,3 +95,67 @@ export const navbarHeaders: navbarHeadersProps[] = [
 ];
 
 
+
+
+export const productsTable = [
+    {
+        img:"/personTwo.png",
+        name:"Wireless Earbuds",
+        category:"Electronics",
+        price:"$59.99",
+        stock:"143",
+        sales:"1200",
+        actions:{
+            edit:<Pencil className='text-green-600' size={16}/>,
+            delete:<Trash2 className='text-red-500' size={16}/>
+        }
+    },
+    {
+        img:"/personTwo.png",
+        name:"Leather Wallet",
+        category:"Accessories",
+        price:"$39.99",
+        stock:"89",
+        sales:"800",
+        actions:{
+            edit:<Pencil className='text-green-600' size={16}/>,
+            delete:<Trash2 className='text-red-500' size={16}/>
+        }
+    },
+    {
+        img:"/personTwo.png",
+        name:"Smart Watch",
+        category:"Electronics",
+        price:"$199.99",
+        stock:"56",
+        sales:"650",
+        actions:{
+            edit:<Pencil className='text-green-600' size={16}/>,
+            delete:<Trash2 className='text-red-500' size={16}/>
+        }
+    },
+    {
+        img:"/personTwo.png",
+        name:"Yoga Mat",
+        category:"Fitness",
+        price:"$29.99",
+        stock:"210",
+        sales:"950",
+        actions:{
+            edit:<Pencil className='text-green-600' size={16}/>,
+            delete:<Trash2 className='text-red-500' size={16}/>
+        }
+    },
+    {
+        img:"/personTwo.png",
+        name:"Coffee Maker",
+        category:"Home",
+        price:"$79.99",
+        stock:"78",
+        sales:"720",
+        actions:{
+            edit:<Pencil className='text-green-600' size={16}/>,
+            delete:<Trash2 className='text-red-500' size={16}/>
+        }
+    }
+];
