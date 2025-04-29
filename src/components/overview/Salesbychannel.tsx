@@ -1,5 +1,4 @@
 import { BarChart, Bar, ResponsiveContainer, XAxis,YAxis, LabelList, Cell } from 'recharts';
-import {motion} from "framer-motion";
 
 
 const COLORS = ["#6366F1", "#8B5CF6", "#EC4899", "#10B981", "#F59E0B"];
@@ -14,7 +13,7 @@ const SALES_CHANNEL_DATA = [
 
 const Salesbychannel = () => {
   return (
-    <motion.div className="p-6 border border-gray-700 rounded-xl shadow-xl cursor-pointer h-[500px] w-full space-y-4">
+    <div className="p-6 border border-gray-700 rounded-xl shadow-xl cursor-pointer h-[500px] w-full space-y-4">
       <h2>Sales by Channel</h2>
       <ResponsiveContainer width="100%" height="90%">
         <BarChart width={150} height={40} data={SALES_CHANNEL_DATA}>
@@ -30,7 +29,7 @@ const Salesbychannel = () => {
           </Bar>
         </BarChart>
       </ResponsiveContainer>
-    </motion.div>
+    </div>
   )
 }
 
