@@ -159,3 +159,62 @@ export const productsTable = [
         }
     }
 ];
+
+
+export const usersTable = [
+    {
+        img:"/personTwo.png",
+        name:"John Doe",
+        email:"john@example.com",
+        role:"Customer",
+        status:"Active",
+        actions:{
+            edit:<span className='text-[#6366f1]'>Edit</span>,
+            delete:<span className='text-red-500'>Delete</span>
+        }
+    },
+    {
+        img:"/personTwo.png",
+        name:"Jane Smith",
+        email:"jane@example.com",
+        role:"Admin",
+        status:"Active",
+        actions:{
+            edit:<span className='text-[#6366f1]'>Edit</span>,
+            delete:<span className='text-red-500'>Delete</span>
+        }
+    },
+    {
+        img:"/personTwo.png",
+        name:"Bob Johnson",
+        email:"bob@example.com",
+        role:"Customer",
+        status:"Inactive",
+        actions:{
+            edit:<span className='text-[#6366f1]'>Edit</span>,
+            delete:<span className='text-red-500'>Delete</span>
+        }
+    },
+    {
+        img:"/personTwo.png",
+        name:"Alice Brown",
+        email:"alice@ecample.com",
+        role:"Customer",
+        status:"Active",
+        actions:{
+            edit:<span className='text-[#6366f1]'>Edit</span>,
+            delete:<span className='text-red-500'>Delete</span>
+        }
+    },
+    {
+        img:"/personTwo.png",
+        name:"Charlie Wilson",
+        email:"charlie@example.com",
+        role:"Moderator",
+        status:"Active",
+        actions:{
+            edit:<span className='text-[#6366f1]'>Edit</span>,
+            delete:<span className='text-red-500'>Delete</span>
+        }
+    },
+];

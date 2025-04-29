@@ -1,6 +1,6 @@
+import { Zap, ShoppingBag, Users, ChartNoAxesColumn } from 'lucide-react';
 import {motion} from "framer-motion";
 import Statescard from "../components/Statescard";
-import { Zap, ShoppingBag, Users, ChartNoAxesColumn } from 'lucide-react';
 import Salesoverview from "../components/overview/Salesoverview";
 import Categorydis from "../components/overview/Categorydis";
 import Salesbychannel  from "../components/overview/Salesbychannel";

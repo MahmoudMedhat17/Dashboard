@@ -1,9 +1,9 @@
 import {motion} from "framer-motion";
-import Statescard from "../components/Statescard";
 import {Package, TrendingUp, TriangleAlert, DollarSign } from "lucide-react";
-import Productslist from "../components/Products/Productslist";
-import Salestrend from "../components/Products/Salestrend";
-import Categorydis from "../components/Products/Categorydis";
+import Statescard from "../components/Statescard";
+import Productslist from "../components/products/Productslist";
+import Salestrend from "../components/products/Salestrend";
+import Categorydis from "../components/products/Categorydis";
 
 // Fix the table overflow and responsiveness
 
@@ -16,10 +16,10 @@ const Products = () => {
         <Statescard title="Low Stock" data="23" icon={<TriangleAlert className="text-[#ffd518]"/>}/>
         <Statescard title="Total Revenue" data="$543,210" icon={<DollarSign className="text-[#fa3321]"/>}/>
       </motion.main>
-      <motion.div>
+      <motion.div initial={{opacity:0, translateY:20}} animate={{opacity:1, translateY:0}} transition={{delay:0.8}} className="grid mb-10">
         <Productslist/>
       </motion.div>
-      <motion.div>
+      <motion.div initial={{opacity:0, translateY:20}} animate={{opacity:1, translateY:0}} transition={{delay:1}} className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <Salestrend/>
         <Categorydis/>
       </motion.div>
