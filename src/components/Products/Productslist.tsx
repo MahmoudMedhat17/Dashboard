@@ -1,10 +1,9 @@
-import {motion} from "framer-motion";
 import { productsTable } from "../../utils/index";
 
 
 const Productslist = () => {
   return (
-    <motion.div initial={{opacity:0, translateY:20}} animate={{opacity:1, translateY:0}} transition={{delay:0.6}} className="p-6 border border-gray-700 rounded-xl shadow-xl cursor-pointer h-fit w-full">
+    <div className="p-6 border border-gray-700 rounded-xl shadow-xl cursor-pointer h-fit w-full">
         <div className="flex justify-between items-center">
           <h2>Product List</h2>
           <input type="text" />
@@ -43,7 +42,7 @@ const Productslist = () => {
                 </tbody>
             </table>
         </div>
-      </motion.div>
+      </div>
   )
 }
 

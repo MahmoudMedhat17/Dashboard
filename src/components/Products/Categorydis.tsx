@@ -1,5 +1,4 @@
 import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
-import {motion} from "framer-motion";
 
 
 const categoryDistributionData = [
@@ -8,7 +7,7 @@ const categoryDistributionData = [
     value:31
   },
   {
-    name:"CLothing",
+    name:"Clothing",
     value:22
   },
   {
@@ -27,8 +26,17 @@ const categoryDistributionData = [
 
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
 
+interface renderCustomizedLabelProps{
+  cx:string;
+  cy:string;
+  midAngle:number;
+  outerRadius:number;
+  percent:number;
+  name:string;
+  index:number;
+}
 
-const renderCustomizedLabel = ({ cx, cy, midAngle, outerRadius, percent, name, index }) => {
+const renderCustomizedLabel = ({ cx, cy, midAngle, outerRadius, percent, name, index } : renderCustomizedLabelProps) => {
   const RADIAN = Math.PI / 180;
   const radius = outerRadius + 10;
   const x = cx + radius * Math.cos(-midAngle * RADIAN);
@@ -48,7 +56,7 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, outerRadius, percent, name, i
 
 const Categorydis = () => {
   return (
-    <motion.div className='p-4 border border-gray-700 rounded-xl shadow-xl cursor-pointer h-[500px] w-full space-y-4'>
+    <div className='p-4 border border-gray-700 rounded-xl shadow-xl cursor-pointer h-[500px] w-full space-y-4'>
       <h2>Category Distribution</h2>
       <ResponsiveContainer width="100%" height="70%">
         <PieChart width={400} height={400}>
@@ -82,7 +90,7 @@ const Categorydis = () => {
           ))
         }
       </div>
-    </motion.div>
+    </div>
   )
 }
 

@@ -7,3 +7,14 @@
 *,:root,html{
   box-sizing: border-box;
 }
+
+
+/* This is the new way to add custom styles using tailwind css V4 */
+@theme{
+  --color-purpleColor:#6366f1;
+  --color-pinkColor:#EC4899;
+  --color-greenColor:#10B981;
+  --color-yellowColor:#ffd518;
+  --color-redColor:#fa3321;
+  --color-lightRedColor:#ff6467;
+}
