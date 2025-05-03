@@ -17,7 +17,7 @@ const Sidebar = () => {
             <nav className="flex flex-col justify-around h-full">
               {
                 sidebarItems.map((item,index)=>(
-                  <div key={index} className="hover:bg-gray-400 duration-300 rounded-sm">
+                  <div key={index}>
                     <Link to={item.path}>
                       <div className="flex gap-4 text-sm p-2 font-semibold">
                       <span style={{color:`${item.color}`}}>{item.icon}</span>

@@ -16,14 +16,14 @@ const Users = () => {
         <Statescard title="Active Users" icon={<UserRoundCheck className='text-yellowColor'/>} data="98,520"/>
         <Statescard title="Churn Rate" icon={<UserX className='text-lightRedColor'/>} data="2.4%"/>
       </motion.main>
-      <motion.div initial={{opacity:0, translateY:20}} animate={{opacity:1, translateY:0}} transition={{delay:0.8}} className="grid mb-10"> 
+      <motion.div initial={{opacity:0, translateY:20}} animate={{opacity:1, translateY:0}} transition={{delay:0.8, duration:1}} className="grid mb-10"> 
         <Userstable/>
       </motion.div>
-      <motion.div initial={{opacity:0, translateY:20}} animate={{opacity:1, translateY:0}} transition={{delay:1}} className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-10"> 
+      <motion.div initial={{opacity:0, translateY:20}} animate={{opacity:1, translateY:0}} transition={{delay:1, duration:1}} className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-10"> 
         <Usersgrowth/>
         <Usersactivity/>
       </motion.div>
-      <motion.div initial={{opacity:0, translateY:20}} animate={{opacity:1, translateY:0}} transition={{delay:1.2}} className="grid mb-10"> 
+      <motion.div initial={{opacity:0, translateY:20}} animate={{opacity:1, translateY:0}} transition={{delay:1.2, duration:1}} className="grid mb-10"> 
         <Userdemographics/>
       </motion.div>
     </section>

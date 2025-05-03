@@ -1,8 +1,9 @@
 import {motion} from "framer-motion";
 import Statescard from "../components/Statescard";
 import {DollarSign , ShoppingCart, TrendingUp, CreditCard } from "lucide-react";
-import Salesoverview from "../components/Sales/Salesoverview";
-import Salesbycategory from "../components/Sales/Salesbycategory";
+import Salesoverview from "../components/sales/Salesoverview";
+import Salesbycategory from "../components/sales/Salesbycategory";
+import Dailysales from "../components/sales/Dailysales";
 
 const Sales = () => {
   return (
@@ -13,12 +14,13 @@ const Sales = () => {
         <Statescard title="Conversion Rate" icon={<TrendingUp className="text-yellowColor"/>} data="3.45%"/>
         <Statescard title="Sales Growth" icon={<CreditCard className="text-redColor"/>} data="12.3%"/>
       </motion.main>
-      <div>
+      <motion.div initial={{opacity:0, translateY:20}} animate={{opacity:1, translateY:0}} transition={{delay:0.8, duration:1}} className="grid mb-10">
         <Salesoverview/>
-      </div>
-      <div>
+      </motion.div>
+      <motion.div initial={{opacity:0, translateY:20}} animate={{opacity:1, translateY:0}} transition={{delay:1, duration:1}} className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <Salesbycategory/>
-      </div>
+        <Dailysales/>
+      </motion.div>
     </section>
   )
 }

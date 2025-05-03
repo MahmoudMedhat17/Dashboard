@@ -1,10 +1,50 @@
-import { BarChart, Bar, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, ResponsiveContainer,XAxis, YAxis } from 'recharts';
 
+
+const dailysalesData = [
+  {
+    day:"Mon",
+    value:1000
+  },
+  {
+    day:"Tue",
+    value:1200
+  },
+  {
+    day:"Wed",
+    value:800
+  },
+  {
+    day:"Thu",
+    value:1100
+  },
+  {
+    day:"Fri",
+    value:1300
+  },
+  {
+    day:"Sat",
+    value:1600
+  },
+  {
+    day:"Sun",
+    value:1400
+  }
+];
 
 
 const Dailysales = () => {
   return (
-    <div>Dailysales</div>
+    <div className='p-4 border border-gray-700 rounded-xl shadow-xl cursor-pointer h-[500px] w-full space-y-4'>
+      <h2>Daily Sales Trend</h2>
+      <ResponsiveContainer width="100%" height="90%">
+        <BarChart width={150} height={40} data={dailysalesData}>
+          <Bar dataKey="value" fill='#00C49F'/>
+        <XAxis dataKey="day"/>
+        <YAxis dataKey="value"/>
+        </BarChart>
+      </ResponsiveContainer>
+    </div>
   )
 }
 

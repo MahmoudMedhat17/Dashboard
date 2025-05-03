@@ -34,7 +34,8 @@ interface renderCustomizedLabelProps{
   percent:number;
   name:string;
   index:number;
-}
+};
+
 
 const renderCustomizedLabel = ({ cx, cy, midAngle, outerRadius, percent, name, index } : renderCustomizedLabelProps) => {
   const RADIAN = Math.PI / 180;

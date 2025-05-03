@@ -47,14 +47,14 @@ const Salesoverview = () => {
           <option>This Year</option>
         </select>
       </div>
-      <ResponsiveContainer width="100%" height="100%">
+      <ResponsiveContainer width="100%" height="90%">
         <AreaChart
           width={500}
           height={400}
           data={salesoverviewData}
         >
-          <XAxis dataKey="month"/>
-          <YAxis/>
+          <XAxis dataKey="month" stroke='#ccc'/>
+          <YAxis stroke='#ccc'/>
           <Tooltip/>
           <Area type="monotone" dataKey="value" stroke='#8884d8' fill='#8884d8'/>
         </AreaChart>
