@@ -17,4 +17,8 @@
   --color-yellowColor:#ffd518;
   --color-redColor:#fa3321;
   --color-lightRedColor:#ff6467;
+  --color-deliveredColor:#D1F7D4;
+  --color-processingColor:#FEEFAD;
+  --color-shippedColor:#E1E7F8;
+  --color-pendingColor:#EF88AD;   
 }
