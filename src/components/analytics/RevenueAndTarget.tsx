@@ -50,11 +50,10 @@ const RevenueAndTarget = () => {
     <div className='p-6 border border-gray-700 rounded-xl shadow-xl cursor-pointer h-[500px] w-full space-y-4'>
         <div className='flex justify-between items-center'>
             <h2>Revenue Vs Target</h2>
-            <select name="cars" id="cars">
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
+            <select value={date} onChange={(e)=>setDate(e.target.value)} className='px-2 py-1 bg-gray-500/60 rounded-lg'>
+                <option>This Month</option>
+                <option>This Week</option>
+                <option>This Year</option>
             </select>
         </div>
             <ResponsiveContainer width="100%" height="80%">

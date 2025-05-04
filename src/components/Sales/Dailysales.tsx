@@ -39,9 +39,9 @@ const Dailysales = () => {
       <h2>Daily Sales Trend</h2>
       <ResponsiveContainer width="100%" height="90%">
         <BarChart width={150} height={40} data={dailysalesData}>
-          <Bar dataKey="value" fill='#00C49F'/>
-        <XAxis dataKey="day"/>
-        <YAxis dataKey="value"/>
+        <Bar dataKey="value" fill='#00C49F'/>
+        <XAxis dataKey="day" stroke='#ccc'/>
+        <YAxis dataKey="value" stroke='#ccc'/>
         </BarChart>
       </ResponsiveContainer>
     </div>

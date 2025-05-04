@@ -13,9 +13,9 @@ const Statescard = ({title,icon,data}:statesCardProps) => {
       <div className="flex flex-col items-start space-y-1">
         <div className="flex gap-2">
           <span>{icon}</span>
-          <span className="text-gray-200 text-sm font-medium">{title}</span>
+          <span className="text-gray-200 text-sm">{title}</span>
         </div>
-        <span className="text-xl">{data}</span>
+        <span className="text-xl font-semibold">{data}</span>
       </div>
     </motion.div>
   )

@@ -18,8 +18,8 @@ const Analyticscard = ({title, data, icon, period, smallIcon, percent}:analytics
         <div className="flex flex-col gap-2">
             <div className="flex justify-between items-center">
                 <div className="flex flex-col items-start space-y-1">
-                    <span className="text-gray-300 font-semibold">{title}</span>
-                    <span>{data}</span>
+                    <span className="text-gray-200">{title}</span>
+                    <span className="text-xl font-semibold">{data}</span>
                 </div>
                 <span>{icon}</span>
             </div>

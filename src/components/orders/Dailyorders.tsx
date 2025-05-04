@@ -1,4 +1,4 @@
-import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid } from 'recharts';
 import { ArrowRight } from 'lucide-react';
 
 
@@ -40,6 +40,7 @@ const Dailyorders = () => {
         <h2>Daily Orders</h2>
         <ResponsiveContainer width="100%" height="80%">
             <LineChart width={300} height={100} data={dailyordersData}>
+                <CartesianGrid strokeDasharray="3 3" stroke="#2d2d2d"/> 
                 <XAxis dataKey="day" stroke='#ccc'/>
                 <YAxis stroke='#ccc'/>
                 <Tooltip/>

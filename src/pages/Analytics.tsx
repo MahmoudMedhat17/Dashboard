@@ -2,6 +2,9 @@ import {motion} from "framer-motion";
 import {DollarSign, Users, ShoppingBag, Eye, ArrowUpRight, ArrowDownRight } from "lucide-react";
 import Analyticscard from "../components/Analyticscard";
 import RevenueAndTarget from "../components/analytics/RevenueAndTarget";
+import Channelperformance from "../components/analytics/Channelperformance";
+import Productperformance from "../components/analytics/Productperformance";
+import Userretention from "../components/analytics/Userretention";
 
 const Analytics = () => {
   return (
@@ -16,7 +19,9 @@ const Analytics = () => {
         <RevenueAndTarget/>
       </div>
       <div>
-
+        <Channelperformance/>
+        <Productperformance/>
+        <Userretention/>
       </div>
     </section>
   )
