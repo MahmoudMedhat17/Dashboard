@@ -1,9 +1,14 @@
-import React from 'react'
+import Notifications from "../components/settings/Notifications";
+import Profile from "../components/settings/Profile";
+
 
 const Settings = () => {
   return (
-    <div>Settings</div>
+    <div>
+      <Profile/>
+      <Notifications/>
+    </div>
   )
 }
 
-export default Settings
+export default Settings;

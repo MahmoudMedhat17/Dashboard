@@ -33,15 +33,17 @@ const Salestrend = () => {
   return (
     <div className="p-6 border border-gray-700 rounded-xl shadow-xl cursor-pointer h-[500px] w-full space-y-4">
       <h2>Sales Trend</h2>
-      <ResponsiveContainer width="100%" height="90%">
-        <LineChart data={salesTrendingData}>
-          <CartesianGrid strokeDasharray="3 3" stroke="#2d2d2d"/>
-          <XAxis dataKey="month" stroke="#ccc"/>
-          <YAxis stroke="#ccc"/>
-          <Tooltip />
-          <Line type="monotone" dataKey="sales" stroke="#8884d8" strokeWidth={2} dot={{ r: 4 }} />
-        </LineChart>
-      </ResponsiveContainer>
+      <div className='w-full h-96'>
+        <ResponsiveContainer>
+          <LineChart data={salesTrendingData}>
+            <CartesianGrid strokeDasharray="3 3" stroke="#2d2d2d"/>
+            <XAxis dataKey="month" stroke="#ccc"/>
+            <YAxis stroke="#ccc"/>
+            <Tooltip />
+            <Line type="monotone" dataKey="sales" stroke="#8884d8" strokeWidth={2} dot={{ r: 4 }} />
+          </LineChart>
+        </ResponsiveContainer>
+      </div>
     </div>
   )
 }

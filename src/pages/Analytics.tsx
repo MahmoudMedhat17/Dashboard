@@ -5,6 +5,7 @@ import RevenueAndTarget from "../components/analytics/RevenueAndTarget";
 import Channelperformance from "../components/analytics/Channelperformance";
 import Productperformance from "../components/analytics/Productperformance";
 import Userretention from "../components/analytics/Userretention";
+import Customersegmentation from "../components/analytics/Customersegmentation";
 
 const Analytics = () => {
   return (
@@ -15,14 +16,15 @@ const Analytics = () => {
         <Analyticscard percent="3.2%" smallIcon={<ArrowDownRight className="text-redColor" size={20}/>} period="vs Last Period" title="Orders" icon={<ShoppingBag className="text-redColor bg-redColor/40 p-1 rounded-full"/>} data="9,876"/>
         <Analyticscard percent="15.7%" smallIcon={<ArrowUpRight className="text-greenColor" size={20}/>} period="vs Last Period" title="Page Views" icon={<Eye className="text-greenColor bg-greenColor/40 p-1 rounded-full"/>} data="1,234,517"/>
       </motion.main>
-      <div>
+      <div className="grid mb-10">
         <RevenueAndTarget/>
       </div>
-      <div>
+      <motion.div initial={{opacity:0, translateY:20}} animate={{opacity:1, translateY:0}} transition={{delay:0.8, duration:1}} className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <Channelperformance/>
         <Productperformance/>
         <Userretention/>
-      </div>
+        <Customersegmentation/>
+      </motion.div>
     </section>
   )
 }

@@ -39,18 +39,20 @@ const Productperformance = () => {
   return (
     <div className='p-4 border border-gray-700 rounded-xl shadow-xl cursor-pointer h-[500px] w-full space-y-4'>
       <h2>Product Performance</h2>
-      <ResponsiveContainer width="100%" height="90%">
-        <BarChart width={500} height={300} data={productperformanceData}>
-          <CartesianGrid strokeDasharray="3 3" stroke="#2d2d2d"/>
-          <XAxis dataKey="product" stroke='#ccc'/>
-          <YAxis stroke='#ccc'/>
-          <Tooltip/>
-          <Legend/>
-          <Bar dataKey="sales" fill='#6366f1'/>
-          <Bar dataKey="revenue" fill='#10B981'/>
-          <Bar dataKey="profit" fill='#ffd518'/>
-        </BarChart>
-      </ResponsiveContainer>
+      <div className='w-full h-96'>
+        <ResponsiveContainer>
+          <BarChart width={500} height={300} data={productperformanceData}>
+            <CartesianGrid strokeDasharray="3 3" stroke="#2d2d2d"/>
+            <XAxis dataKey="product" stroke='#ccc'/>
+            <YAxis stroke='#ccc'/>
+            <Tooltip/>
+            <Legend/>
+            <Bar dataKey="sales" fill='#6366f1'/>
+            <Bar dataKey="revenue" fill='#10B981'/>
+            <Bar dataKey="profit" fill='#ffd518'/>
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
     </div>
   )
 }

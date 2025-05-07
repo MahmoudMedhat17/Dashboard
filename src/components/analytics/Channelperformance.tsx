@@ -64,37 +64,39 @@ const Channelperformance = () => {
   return (
     <div className='p-4 border border-gray-700 rounded-xl shadow-xl cursor-pointer h-[500px] w-full space-y-4'>
         <h2>Channel Performance</h2>
-        <ResponsiveContainer width="100%" height="70%">
-          <PieChart width={400} height={400}>
-              <Pie
-                data={channelperformanceData}
-                cx="50%"
-                cy="50%"
-                labelLine={false}
-                label={renderCustomizedLabel}
-                outerRadius={100}
-                fill="#8884d8"
-                dataKey="value"
-              >
-                {channelperformanceData.map((_, index) => (
-                  <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]}/>
-                ))}
-              </Pie>
-          </PieChart>
-        </ResponsiveContainer>
-          <div className='flex flex-wrap justify-center gap-4'>
-            {
-              channelperformanceData.map((category,index)=>(
-                <div key={index}>
-                  <div className='flex items-center gap-2'>
-                    <div className='w-4 h-4' style={{backgroundColor:`${COLORS[index % COLORS.length]}`}}/>
-                    <span className='text-sm font-semibold' style={{color:`${COLORS[index % COLORS.length]}`}}>
-                      {category.name}
-                    </span>
+        <div className='w-full h-96'>
+          <ResponsiveContainer height="80%">
+            <PieChart width={400} height={400}>
+                <Pie
+                  data={channelperformanceData}
+                  cx="50%"
+                  cy="50%"
+                  labelLine={false}
+                  label={renderCustomizedLabel}
+                  outerRadius={100}
+                  fill="#8884d8"
+                  dataKey="value"
+                >
+                  {channelperformanceData.map((_, index) => (
+                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]}/>
+                  ))}
+                </Pie>
+            </PieChart>
+          </ResponsiveContainer>
+            <div className='flex flex-wrap justify-center gap-4'>
+              {
+                channelperformanceData.map((category,index)=>(
+                  <div key={index}>
+                    <div className='flex items-center gap-2'>
+                      <div className='w-4 h-4' style={{backgroundColor:`${COLORS[index % COLORS.length]}`}}/>
+                      <span className='text-sm font-semibold' style={{color:`${COLORS[index % COLORS.length]}`}}>
+                        {category.name}
+                      </span>
+                    </div>
                   </div>
-                </div>
-              ))
-            }
+                ))
+              }
+          </div>
         </div>
     </div>
   )

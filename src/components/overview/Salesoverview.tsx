@@ -18,15 +18,17 @@ const Salesoverview = () => {
   return (
     <motion.div initial={{opacity:0, translateY:20}} animate={{opacity:1, translateY:0}} transition={{delay:0.5}} className="p-6 border border-gray-700 rounded-xl shadow-xl cursor-pointer h-[500px] w-full space-y-4">
       <h2>Sales Overview</h2>
-      <ResponsiveContainer width="100%" height="90%">
-        <LineChart data={linechartData}>
-          <CartesianGrid strokeDasharray="3 3" stroke="#2d2d2d" />
-          <XAxis dataKey="month" stroke="#ccc" />
-          <YAxis stroke="#ccc" />
-          <Tooltip />
-          <Line type="monotone" dataKey="sales" stroke="#8884d8" strokeWidth={2} dot={{ r: 4 }} />
-        </LineChart>
-      </ResponsiveContainer>
+      <div className='w-full h-96'>
+        <ResponsiveContainer>
+          <LineChart data={linechartData}>
+            <CartesianGrid strokeDasharray="3 3" stroke="#2d2d2d" />
+            <XAxis dataKey="month" stroke="#ccc" />
+            <YAxis stroke="#ccc" />
+            <Tooltip />
+            <Line type="monotone" dataKey="sales" stroke="#8884d8" strokeWidth={2} dot={{ r: 4 }} />
+          </LineChart>
+        </ResponsiveContainer>
+      </div>
     </motion.div>
   )
 }

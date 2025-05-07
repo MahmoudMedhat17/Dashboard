@@ -37,13 +37,15 @@ const Dailysales = () => {
   return (
     <div className='p-4 border border-gray-700 rounded-xl shadow-xl cursor-pointer h-[500px] w-full space-y-4'>
       <h2>Daily Sales Trend</h2>
-      <ResponsiveContainer width="100%" height="90%">
-        <BarChart width={150} height={40} data={dailysalesData}>
-        <Bar dataKey="value" fill='#00C49F'/>
-        <XAxis dataKey="day" stroke='#ccc'/>
-        <YAxis dataKey="value" stroke='#ccc'/>
-        </BarChart>
-      </ResponsiveContainer>
+      <div className='w-full h-96'>
+        <ResponsiveContainer>
+          <BarChart width={150} height={40} data={dailysalesData}>
+          <Bar dataKey="value" fill='#00C49F'/>
+          <XAxis dataKey="day" stroke='#ccc'/>
+          <YAxis dataKey="value" stroke='#ccc'/>
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
     </div>
   )
 }

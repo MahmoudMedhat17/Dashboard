@@ -15,20 +15,22 @@ const Salesbychannel = () => {
   return (
     <div className="p-6 border border-gray-700 rounded-xl shadow-xl cursor-pointer h-[500px] w-full space-y-4">
       <h2>Sales by Channel</h2>
-      <ResponsiveContainer width="100%" height="90%">
-        <BarChart width={150} height={40} data={SALES_CHANNEL_DATA}>
-          <XAxis dataKey="name" stroke='#ffffff' style={{fontSize:"10px"}}/>
-          <YAxis dataKey="value" stroke='#ffffff'/>
-          <Bar dataKey="value">
-          {
-            SALES_CHANNEL_DATA.map((_,index)=>(
-              <Cell key={`Cell-${index}`} fill={COLORS[index % COLORS.length]}/>
-            ))
-          }
-          <LabelList dataKey="value" position="top" fill='#ffffff'/>
-          </Bar>
-        </BarChart>
-      </ResponsiveContainer>
+      <div className='w-full h-96'>
+        <ResponsiveContainer>
+          <BarChart width={150} height={40} data={SALES_CHANNEL_DATA}>
+            <XAxis dataKey="name" stroke='#ffffff' style={{fontSize:"10px"}}/>
+            <YAxis dataKey="value" stroke='#ffffff'/>
+            <Bar dataKey="value">
+            {
+              SALES_CHANNEL_DATA.map((_,index)=>(
+                <Cell key={`Cell-${index}`} fill={COLORS[index % COLORS.length]}/>
+              ))
+            }
+            <LabelList dataKey="value" position="top" fill='#ffffff'/>
+            </Bar>
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
     </div>
   )
 }

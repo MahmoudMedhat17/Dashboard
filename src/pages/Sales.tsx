@@ -17,7 +17,7 @@ const Sales = () => {
       <motion.div initial={{opacity:0, translateY:20}} animate={{opacity:1, translateY:0}} transition={{delay:0.8, duration:1}} className="grid mb-10">
         <Salesoverview/>
       </motion.div>
-      <motion.div initial={{opacity:0, translateY:20}} animate={{opacity:1, translateY:0}} transition={{delay:1, duration:1}} className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+      <motion.div initial={{opacity:0, translateY:20}} animate={{opacity:1, translateY:0}} transition={{delay:1, duration:1}} className="grid grid-cols-1 xl:grid-cols-2 gap-4">
         <Salesbycategory/>
         <Dailysales/>
       </motion.div>

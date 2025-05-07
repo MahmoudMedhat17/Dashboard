@@ -56,7 +56,8 @@ const RevenueAndTarget = () => {
                 <option>This Year</option>
             </select>
         </div>
-            <ResponsiveContainer width="100%" height="80%">
+        <div className='w-full h-96'>
+            <ResponsiveContainer>
                 <AreaChart width={500} height={400} data={revenueandtargetData}>
                     <XAxis dataKey="month" stroke='#ccc'/>
                     <YAxis stroke='#ccc'/>
@@ -75,6 +76,7 @@ const RevenueAndTarget = () => {
                     Target
                 </span>
             </div>
+        </div>
     </div>
   )
 }

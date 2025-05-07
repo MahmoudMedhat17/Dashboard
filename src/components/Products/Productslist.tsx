@@ -4,6 +4,9 @@ import { productsTable } from "../../utils/index";
 const Productslist = () => {
   return (
     <div className="p-6 border border-gray-700 rounded-xl shadow-xl cursor-pointer h-fit w-full">
+        <div>
+          
+        </div>
         <div className="flex justify-between items-center">
           <h2>Product List</h2>
           <input type="text" />

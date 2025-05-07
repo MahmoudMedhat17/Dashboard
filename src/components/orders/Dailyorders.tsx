@@ -38,19 +38,21 @@ const Dailyorders = () => {
   return (
     <div className='p-4 border border-gray-700 rounded-xl shadow-xl cursor-pointer h-[500px] w-full space-y-4'>
         <h2>Daily Orders</h2>
-        <ResponsiveContainer width="100%" height="80%">
-            <LineChart width={300} height={100} data={dailyordersData}>
-                <CartesianGrid strokeDasharray="3 3" stroke="#2d2d2d"/> 
-                <XAxis dataKey="day" stroke='#ccc'/>
-                <YAxis stroke='#ccc'/>
-                <Tooltip/>
-                <Line type="monotone" dataKey="value" stroke='#8884d8' strokeWidth={2} />
-            </LineChart>
-        </ResponsiveContainer>
-        <p className='flex gap-2 items-center justify-center'>
-            <ArrowRight className='text-purpleColor'/> 
-            <span className='text-purpleColor font-semibold'>Orders</span>
-        </p>
+        <div className='w-full h-96'>
+            <ResponsiveContainer>
+                <LineChart width={300} height={100} data={dailyordersData}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#2d2d2d"/> 
+                    <XAxis dataKey="day" stroke='#ccc'/>
+                    <YAxis stroke='#ccc'/>
+                    <Tooltip/>
+                    <Line type="monotone" dataKey="value" stroke='#8884d8' strokeWidth={2} />
+                </LineChart>
+            </ResponsiveContainer>
+            <p className='flex gap-2 items-center justify-center'>
+                <ArrowRight className='text-purpleColor'/> 
+                <span className='text-purpleColor font-semibold'>Orders</span>
+            </p>
+        </div>
     </div>
   )
 }
