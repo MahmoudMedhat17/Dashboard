@@ -27,7 +27,7 @@ const ConnectedApps = () => {
                                 {app.company}
                             </h3>
                         </div>
-                        <button onClick={toggleBtn} className={`py-1.5 px-4 rounded-md cursor-pointer ${connected ? "bg-greenColor text-white" : "bg-gray-400 text-white"} `}>
+                        <button onClick={toggleBtn} className={`py-1.5 px-4 rounded-md cursor-pointer text-white ${connected ? "bg-greenColor" : "bg-gray-400"} `}>
                             {app.status}
                         </button>
                     </div>

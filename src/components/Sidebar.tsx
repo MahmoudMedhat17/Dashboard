@@ -9,7 +9,7 @@ const Sidebar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   
   return (
-    <motion.div animate={{width: sidebarOpen ? 256 : 80}} className={`h-screen overflow-hidden relative z-10 transition-all duration-100 ease-linear shrink-0 ov ${sidebarOpen ? `w-64` : `w-20`}`}>
+    <motion.div animate={{width: sidebarOpen ? 256 : 80}} className={`h-screen overflow-hidden relative z-10 transition-all duration-100 ease-linear shrink-0 ${sidebarOpen ? `w-64` : `w-20`}`}>
       <motion.div className="bg-gray-800 opacity-80 border-r backdrop-blur-md border-gray-700 p-4 h-full">
         <motion.button whileHover={{scale:1.1}} whileTap={{scale:0.9}} onClick={()=> setSidebarOpen(!sidebarOpen)} className="bg-gray-400 p-2 rounded-full cursor-pointer">
           <Menu size={24}/>
