@@ -287,3 +287,22 @@ export const ordersListTable = [
         actions:<Eye className='text-purpleColor'/>
     }
 ];
+
+
+export const connectedAppsData = [
+    {
+        icon:"/google.png",
+        company:"Google",
+        status:"Connected"
+    },
+    {
+        icon:"/facebook.png",
+        company:"Facebook",
+        status:"Connect"
+    },
+    {
+        icon:"/twitter.png",
+        company:"X",
+        status:"Connected"
+    }
+];
