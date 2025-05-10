@@ -1,10 +1,10 @@
-import Billing from "../components/settings/Billing.tsx";
-import ConnectedApps from "../components/settings/ConnectedApps.tsx";
-import Dangerzone from "../components/settings/Dangerzone.tsx";
-import Language from "../components/settings/Language.tsx";
-import Notifications from "../components/settings/Notifications.tsx";
-import Profile from "../components/settings/Profile.tsx";
-import Security from "../components/settings/Security.tsx";
+import Billing from "../components/settings/Billing";
+import ConnectedApps from "../components/settings/ConnectedApps";
+import Dangerzone from "../components/settings/Dangerzone";
+import Language from "../components/settings/Language";
+import Notifications from "../components/settings/Notifications";
+import Profile from "../components/settings/Profile";
+import Security from "../components/settings/Security";
 
 
 const Settings = () => {
