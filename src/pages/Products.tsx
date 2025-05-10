@@ -1,10 +1,9 @@
 import {motion} from "framer-motion";
 import {Package, TrendingUp, TriangleAlert, DollarSign } from "lucide-react";
-import Statescard from "../components/Statescard";
-import Productslist from "../components/products/Productslist";
-import Salestrend from "../components/products/Salestrend";
-import Categorydis from "../components/products/Categorydis";
-// Fix the table overflow and responsiveness
+import Statescard from "../components/Statescard.tsx";
+import Productslist from "../components/products/Productslist.tsx";
+import Salestrend from "../components/products/Salestrend.tsx";
+import Categorydis from "../components/products/Categorydis.tsx";
 
 const Products = () => {
   return (
