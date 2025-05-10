@@ -5,11 +5,19 @@ import { connectedAppsData } from "../../utils";
 
 const ConnectedApps = () => {
 
-    const [connected,setConnected] = useState(false);
+    const [connected,setConnected] = useState(()=>(
+        connectedAppsData.map((app)=>(
+            app.status === "Connected"
+        ))
+    ));
 
-    const toggleBtn = () =>{
-        setConnected((prev)=>!prev);
-    }
+    const toggleBtn = (index:number) =>{
+        setConnected((prev)=>{
+            const updatedConnect = [...prev];
+            updatedConnect[index] = !updatedConnect[index];
+            return updatedConnect;
+        });
+    };
     
   return (
     <motion.div whileHover={{translateY:-10, transition:{duration:0.3}}} className="p-4 border border-gray-700 rounded-xl shadow-xl cursor-pointer h-fit w-full space-y-4">
@@ -27,8 +35,8 @@ const ConnectedApps = () => {
                                 {app.company}
                             </h3>
                         </div>
-                        <button onClick={toggleBtn} className={`py-1.5 px-4 rounded-md cursor-pointer text-white ${connected ? "bg-greenColor" : "bg-gray-400"} `}>
-                            {app.status}
+                        <button onClick={()=>toggleBtn(index)} className={`py-1.5 px-4 rounded-md cursor-pointer text-white ${connected ? "bg-greenColor" : "bg-gray-400"} `}>
+                            {connected ? "Connected" : "Connect"}
                         </button>
                     </div>
                 ))
