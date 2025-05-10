@@ -3,7 +3,7 @@ import { productsTable } from "../../utils/index";
 
 const Productslist = () => {
   return (
-    <div className="p-6 border border-gray-700 rounded-xl shadow-xl cursor-pointer h-fit w-full">
+    <div className="p-6 border border-gray-700 rounded-xl shadow-xl cursor-pointer h-fit w-full overflow-x-auto relative">
         <div>
           
         </div>
@@ -11,7 +11,7 @@ const Productslist = () => {
           <h2>Product List</h2>
           <input type="text" />
         </div>
-        <div className="overflow-x-auto">
+        <div>
             <table className="min-w-full divide-y divide-gray-700">
                 <thead className="">
                     <tr>
