@@ -24,7 +24,6 @@ const Dashboard = () => {
             <Route path="/orders" element={<Orders/>}/>
             <Route path="/analytics" element={<Analytics/>}/>
             <Route path="/settings" element={<Settings/>}/>
-            <Route path="*" element={<Error/>}/>
           </Routes>
         </div>
       </div>
