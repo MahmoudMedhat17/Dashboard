@@ -1,11 +1,11 @@
 import {motion} from "framer-motion";
 import {DollarSign, Users, ShoppingBag, Eye, ArrowUpRight, ArrowDownRight } from "lucide-react";
-import Analyticscard from "../components/Analyticscard";
-import RevenueAndTarget from "../components/analytics/RevenueAndTarget";
-import Channelperformance from "../components/analytics/Channelperformance";
-import Productperformance from "../components/analytics/Productperformance";
-import Userretention from "../components/analytics/Userretention";
-import Customersegmentation from "../components/analytics/Customersegmentation";
+import Analyticscard from "../components/Analyticscard.tsx";
+import RevenueAndTarget from "../components/analytics/RevenueAndTarget.tsx";
+import Channelperformance from "../components/analytics/Channelperformance.tsx";
+import Productperformance from "../components/analytics/Productperformance.tsx";
+import Userretention from "../components/analytics/Userretention.tsx";
+import Customersegmentation from "../components/analytics/Customersegmentation.tsx";
 
 const Analytics = () => {
   return (

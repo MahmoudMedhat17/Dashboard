@@ -1,9 +1,9 @@
 import {motion} from "framer-motion";
-import Statescard from "../components/Statescard";
 import {DollarSign , ShoppingCart, TrendingUp, CreditCard } from "lucide-react";
-import Salesoverview from "../components/sales/Salesoverview";
-import Salesbycategory from "../components/sales/Salesbycategory";
-import Dailysales from "../components/sales/Dailysales";
+import Statescard from "../components/Statescard.tsx";
+import Salesoverview from "../components/sales/Salesoverview.tsx";
+import Salesbycategory from "../components/sales/Salesbycategory.tsx";
+import Dailysales from "../components/sales/Dailysales.tsx";
 
 const Sales = () => {
   return (

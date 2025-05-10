@@ -1,9 +1,9 @@
 import {motion} from "framer-motion";
-import Statescard from "../components/Statescard";
 import { ShoppingBag, Clock, CircleCheckBig, DollarSign  } from 'lucide-react';
-import Dailyorders from "../components/orders/Dailyorders";
-import Ordersstatus from "../components/orders/Ordersstatus";
-import Orderlist from "../components/orders/Orderlist";
+import Statescard from "../components/Statescard.tsx";
+import Dailyorders from "../components/orders/Dailyorders.tsx";
+import Ordersstatus from "../components/orders/Ordersstatus.tsx";
+import Orderlist from "../components/orders/Orderlist.tsx";
 
 const Orders = () => {
   return (

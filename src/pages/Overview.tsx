@@ -1,9 +1,9 @@
 import { Zap, ShoppingBag, Users, ChartNoAxesColumn } from 'lucide-react';
 import {motion} from "framer-motion";
-import Statescard from "../components/Statescard";
-import Salesoverview from "../components/overview/Salesoverview";
-import Categorydis from "../components/overview/Categorydis";
-import Salesbychannel  from "../components/overview/Salesbychannel";
+import Statescard from "../components/Statescard.tsx";
+import Salesoverview from "../components/overview/Salesoverview.tsx";
+import Categorydis from "../components/overview/Categorydis.tsx";
+import Salesbychannel  from "../components/overview/Salesbychannel.tsx";
 
 const Overview = () => {
   return (

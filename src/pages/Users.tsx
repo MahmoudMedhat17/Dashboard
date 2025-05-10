@@ -1,8 +1,8 @@
 import {UsersRound, UserRoundPlus, UserRoundCheck, UserX  } from 'lucide-react';
-import Statescard from "../components/Statescard"
-import Userstable from '../components/users/Userstable';
-import Usersgrowth from '../components/users/Usersgrowth';
-import Userdemographics from '../components/users/Userdemographics';
+import Statescard from "../components/Statescard.tsx"
+import Userstable from '../components/users/Userstable.tsx';
+import Usersgrowth from '../components/users/Usersgrowth.tsx';
+import Userdemographics from '../components/users/Userdemographics.tsx';
 import {motion} from "framer-motion";
 
 // Need to fix Usersactivity chart
