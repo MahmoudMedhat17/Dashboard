@@ -5,6 +5,7 @@ import Salesoverview from "../components/sales/Salesoverview";
 import Salesbycategory from "../components/sales/Salesbycategory";
 import Dailysales from "../components/sales/Dailysales";
 
+
 const Sales = () => {
   return (
     <section>
