@@ -6,7 +6,6 @@ import Sales from "../pages/Sales";
 import Orders from "../pages/Orders";
 import Analytics from "../pages/Analytics";
 import Settings from "../pages/Settings";
-import Error from "../pages/Error";
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 
