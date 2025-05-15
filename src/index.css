@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*,:root,html{
+  box-sizing: border-box;
+}
+
+
+
+
+/* This is the new way to add custom styles using tailwind css V4 */
+@theme{
+  --color-purpleColor:#6366f1;
+  --color-pinkColor:#EC4899;
+  --color-greenColor:#10B981;
+  --color-yellowColor:#ffd518;
+  --color-redColor:#fa3321;
+  --color-lightRedColor:#ff6467;
+  --color-deliveredColor:#D1F7D4;
+  --color-processingColor:#FEEFAD;
+  --color-shippedColor:#E1E7F8;
+  --color-pendingColor:#EF88AD;   
+}
